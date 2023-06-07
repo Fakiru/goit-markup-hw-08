@@ -4,9 +4,18 @@
 @import "../css/sass/components/_page-index.scss";
 @import "../css/sass/components/_page-modal.scss";
 @import "../css/sass/components/_page-portofolio.scss";
+@import "../css/sass/components/_page-mobile.scss";
 
-.container {
-  width: 1200px;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 .container {
@@ -16,6 +25,19 @@
 
 .main-section {
   padding: 94px;
+}
+
+* {
+  -webkit-margin-before: 0px;
+  margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+  margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+  padding-inline-start: 0px;
 }
 
 .link {

@@ -45,12 +45,85 @@
             </li>
           </ul>
         </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+             width="24"
+             height="24"
+             fill="currentColor"
+             viewBox="0 0 20 20"
+             xmlns="http://www.w3.org/2000/svg"                    >
+             <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+              ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!--Project Category Section-->
 
     <main class="container">
+     
+    <!--Hidden menu-->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+            </button>
+              <div class="mobile-menu">
+                <nav>
+                  <ul class="mobile-menu__nav unstyled-list">
+                    <li class="contact__item">
+                      <a class="link" href="index.html">Studio</a></li>
+                    <li class="contact__item">
+                      <a class="link" href="portofolio.html">Portofolio</a></li>
+                    <li class="contact__item">
+                      <a class="link" href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+              <div>
+                  <ul class="mobile-menu__contacts unstyled-list">
+                     <li class="contact__item">
+                        <a class="link" href="tel:+123456789">+1 212-772-4150</a>
+                     </li>
+                     <li class="contact__item">
+                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                     </li>
+                  </ul>
+              </div>
+                  <ul class="mobile-menu__social unstyled-list">
+                    <li><a href=""></a>Instagram</li>
+                    <li><svg width="1" height="22">
+                        <use href="images/icons-svg.svg#icon-line-1"></use>
+                        </svg></li>
+                    <li><a href=""></a>Twitter</li>
+                    <li><svg width="1" height="22">
+                        <use href="images/icons-svg.svg#icon-line-1"></use>
+                        </svg></li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><svg width="1" height="22">
+                        <use href="images/icons-svg.svg#icon-line-1"></use>
+                        </svg></li>
+                    <li><a href=""></a>Linkedin</li>
+                    <li><svg width="1" height="22">
+                        <use href="images/icons-svg.svg#icon-line-1"></use>
+                        </svg></li>
+                  </ul>
+              </div>              
+            </div>
 
       <section class="section project__section ">
           <div class="project__tab container">
@@ -69,12 +142,23 @@
           <ul class="project__card--list unstyled__list">
             <li class="project__card--item">
               <div class="project__image">
-                <img
-                    src="./images/Technoduck.jpg"
-                    alt="Technoduck"
-                    width=" 370px"
-                    height="294px"
-                  />
+                <picture>
+                  <source
+                    media="screen and (max-width: 767px)"
+                    srcset="images/portofolio/technoduck/technoduck-m.jpg 1x,images/portofolio/technoduck/technoduck-m@2x.jpg 2x"/>
+                  <source
+                    media="screen and (min-width: 768px) and (max-width: 1199px)"
+                    srcset="images/portofolio/technoduck/technoduck-t.jpg 1x,images/portofolio/technoduck/technoduck-t@2x.jpg 2x"/>
+                  <source
+                     media="screen and (min-width: 1200px)"
+                     srcset="images/portofolio/technoduck/technoduck-D.jpg 1x,images/portofolio/technoduck/technoduck-D@2x.jpg 2x"/>
+                  <img
+                      src="./images/Technoduck.jpg"
+                      alt="Technoduck"
+                      width=" 370px"
+                      height="294px"
+                    />
+                </picture>  
                   <div class="overlay">
                     <div ><p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                   </div>
@@ -86,12 +170,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/PosterBasket.jpg"
-                    alt="PosterBasket"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                    media="screen and (max-width: 767px)"
+                    srcset="images/portofolio/poster/poster-m.jpg 1x,images/portofolio/poster/poster-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/poster/poster-t.jpg 1x,images/portofolio/poster/poster-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/poster/poster-D.jpg 1x,images/portofolio/poster/poster-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/PosterBasket.jpg"
+                      alt="PosterBasket"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -104,12 +199,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/Seafood.jpg"
-                    alt="Seafood"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                    media="screen and (max-width: 767px)"
+                    srcset="images/portofolio/seafood/seafood-m.jpg 1x,images/portofolio/seafood/seafood-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/seafood/seafood-t.jpg 1x,images/portofolio/seafood/seafood-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/seafood/seafood-D.jpg 1x,images/portofolio/seafood/seafood-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/Seafood.jpg"
+                      alt="Seafood"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -120,12 +226,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/ProjectPrime.jpg"
-                    alt="ProjectPrime"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                    media="screen and (max-width: 767px)"
+                    srcset="images/portofolio/prime/prime-m.jpg 1x,images/portofolio/prime/prime-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/prime/prime-t.jpg 1x,images/portofolio/prime/prime-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/prime/prime-D.jpg 1x,images/portofolio/prime/prime-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/ProjectPrime.jpg"
+                      alt="ProjectPrime"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>  
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -136,12 +253,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/ProjectBoxes.jpg"
-                    alt="ProjectBoxes"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                    media="screen and (max-width: 767px)"
+                    srcset="images/portofolio/boxes/boxes-m.jpg 1x,images/portofolio/boxes/boxes-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/boxes/boxes-t.jpg 1x,images/portofolio/boxes/boxes-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/boxes/boxes-D.jpg 1x,images/portofolio/boxes/boxes-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/ProjectBoxes.jpg"
+                      alt="ProjectBoxes"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>  
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -152,12 +280,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/PcWeb.jpg"
-                    alt="PcWeb"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                    media="screen and (max-width: 767px)"
+                    srcset="images/portofolio/inspiration/inspiration-m.jpg 1x,images/portofolio/inspiration/inspiration-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/inspiration/inspiration-t.jpg 1x,images/portofolio/inspiration/inspiration-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/inspiration/inspiration-D.jpg 1x,images/portofolio/inspiration/inspiration-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/PcWeb.jpg"
+                      alt="PcWeb"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>  
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -168,12 +307,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/LimitedEdition.jpg"
-                    alt="LimitedEdition"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      media="screen and (max-width: 767px)"
+                      srcset="images/portofolio/limited/limited-m.jpg 1x,images/portofolio/limited/limited-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/limited/limited-t.jpg 1x,images/portofolio/limited/limited-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/limited/limited-D.jpg 1x,images/portofolio/limited/limited-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/LimitedEdition.jpg"
+                      alt="LimitedEdition"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>  
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -184,12 +334,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/ProjectLAB.jpg"
-                    alt="ProjectLAB"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      media="screen and (max-width: 767px)"
+                      srcset="images/portofolio/lab/lab-m.jpg 1x,images/portofolio/lab/lab-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/lab/lab-t.jpg 1x,images/portofolio/lab/lab-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/lab/lab-D.jpg 1x,images/portofolio/lab/lab-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/ProjectLAB.jpg"
+                      alt="ProjectLAB"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>  
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -200,12 +361,23 @@
 
               <li class="project__card--item">
                 <div class="project__image">
-                  <img
-                    src="./images/Laptop.jpg"
-                    alt="Laptop"
-                    width=" 370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      media="screen and (max-width: 767px)"
+                      srcset="images/portofolio/growing/growing-m.jpg 1x,images/portofolio/growing/growing-m@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="images/portofolio/growing/growing-t.jpg 1x,images/portofolio/growing/growing-t@2x.jpg 2x"/>
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="images/portofolio/growing/growing-D.jpg 1x,images/portofolio/growing/growing-D@2x.jpg 2x"/>
+                    <img
+                      src="./images/Laptop.jpg"
+                      alt="Laptop"
+                      width=" 370px"
+                      height="294px"
+                    />
+                  </picture>  
                   <div class="overlay">
                     <div><p>...</p>
                   </div>
@@ -277,5 +449,12 @@
         </div>
       </div>
     </footer>
+    <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./css/mobile/mobile.js"></script>
   </body>
 </html>

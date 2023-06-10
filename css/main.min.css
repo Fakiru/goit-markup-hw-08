@@ -151,7 +151,7 @@ html {
 }
 
 .mobile-menu__contacts {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .mobile-menu a {
@@ -198,7 +198,7 @@ html {
   padding-bottom: 94px;
   display: flex;
   padding-left: 215px;
-  padding-right: 215px;
+
   align-items: center;
 }
 
@@ -888,10 +888,12 @@ html {
   color: #fff;
   font-style: normal;
   padding-bottom: 20px;
+  margin-left: 94px;
 }
 
 .footer__subscribe--form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
 }
@@ -940,7 +942,7 @@ html {
 
 .footer__subscribe--form {
   flex-direction: row;
-  gap: 10px;
+  margin-left: 94px;
 }
 
 .footer__subscribe--form button {
@@ -1069,7 +1071,6 @@ html {
 .footer__item {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 215px;
   align-items: center;
   align-content: center;
   justify-content: center;

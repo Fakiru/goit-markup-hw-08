@@ -21,6 +21,7 @@
 .container {
   margin: 0 auto;
   width: 100%;
+  margin-right: 215px;
 }
 
 .main-section {
@@ -150,7 +151,7 @@ html {
 }
 
 .mobile-menu__contacts {
-  padding-top: 306px;
+  padding-top: 150px;
 }
 
 .mobile-menu a {
@@ -176,6 +177,15 @@ html {
   transform: rotate(90deg);
   position: relative;
   top: 18px;
+}
+
+.customers__section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .customers__section {
@@ -221,11 +231,12 @@ html {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  margin-left: 215px;
-  margin-right: 215px;
+  object-fit: contain;
 }
 
 .team__media--item svg {
@@ -367,16 +378,16 @@ html {
   gap: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .values__item {
-    flex-basis: calc((100% - 60px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .values__item {
-    flex-basis: calc((100% - 90px) / 4);
-  }
+.values__item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  gap: 30px;
 }
 
 .values__image {
@@ -642,8 +653,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: 215px;
-  margin-right: 215px;
   align-items: center;
   justify-content: center;
 }
@@ -699,7 +708,6 @@ html {
 
 .project__image {
   position: relative;
-  width: 370px;
   height: 410px;
   overflow: hidden;
   text-align: center;
@@ -870,7 +878,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 215px;
 }
 
 .footer__subscribe--title {
@@ -946,8 +953,6 @@ html {
   justify-content: center;
   gap: 94px;
   width: 100%;
-  margin-left: 215px;
-  margin-right: 215px;
 }
 
 .footer__media--title {
@@ -957,9 +962,10 @@ html {
 
 @media screen and (min-width: 1200px) {
   .footer__list {
-    justify-content: flex-start;
     gap: 0px;
     padding-left: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .footer__media--item svg {
@@ -1053,13 +1059,20 @@ html {
 }
 .footer__item .footer__contact {
   display: flexbox;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-left: -215px;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer__item {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 215px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer__section {
